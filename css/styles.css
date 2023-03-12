@@ -20,7 +20,9 @@
 --about-subtitle: #2E2F42;
 --about-text: #434455;
 --promo-title: #2E2F42;
+--section-team-background: #F4F4FD;
 --team-title:#2E2F42;
+--team-info-background: #FFFFFF;
 --team-title-name: #2E2F42;
 --team-text: #434455;
 --gallery: #FFFFFF;
@@ -55,6 +57,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 .section {
     padding: 120px 0;
@@ -220,7 +227,17 @@ overflow: hidden;
     color: var(--promo-title);
 
 }
-
+.promo-subject {
+    display: flex;
+}
+.style{
+    display: block;
+    max-width: 100%;
+}
+.section-team {
+    padding: 120px 0;
+    background-color: var(--section-team-background);
+}
 .team-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -230,6 +247,18 @@ overflow: hidden;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--team-title);
+    margin: 0 0 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.team-info{
+    background-color: var(--team-info-background);
+}
+.team-style{
+    padding: 32px 0;
+
 }
 .team-title-name {
     font-family: 'Roboto', sans-serif;
@@ -241,6 +270,7 @@ overflow: hidden;
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin: 0 0 8px;
 }
 .team-text {
     font-family: 'Roboto', sans-serif;
@@ -252,6 +282,7 @@ overflow: hidden;
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin: 0;
 }
 /**-----Portfolio---------*/
 .section.portfolio {
@@ -308,6 +339,10 @@ color: var(--gallery-text);
 /**-----Footer---------*/
 .footer {
 background-color:  var(--footer); 
+padding: 100px 0;
+}
+.footer-container{
+    width: 264px;
 }
 .footer-title {
 position: absolute;
