@@ -288,6 +288,9 @@ overflow: hidden;
 .section.portfolio {
     padding-top: 96px;
 }
+.menu-btn{
+    margin: 72px;
+}
 .all-btn {
 font-family: 'Roboto', sans-serif;
 cursor: pointer;
@@ -301,6 +304,8 @@ letter-spacing: 0.04em;
 color: var(--all-btn);
 background-color: #F4F4FD;
 border-color: 1px solid #E7E9FC ;
+padding: 12px 24px;
+gap: 24px;
 }
 .all-btn:hover {
     background-color: #404bbf;
@@ -310,14 +315,28 @@ border-color: 1px solid #E7E9FC ;
     background-color: #404bbf; 
     color: #F4F4FD;
 }
+
 .list {
 list-style: none;
+display: flex;
+align-items: center;
+flex-wrap: wrap;
 padding: 0;
 margin: 0;
+
+
 }
 .gallery{
     background-color: var(--gallery);
     text-decoration: none; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+.gallery-container {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: 0;
 }
 .gallery-title{
 text-decoration: none;
@@ -326,6 +345,7 @@ font-size: 20px;
 line-height: 1.2;        
 letter-spacing: 0.02em;       
 color: var(--gallery-title);
+margin: 0 0 8px;
 }
 .gallery-text{
 font-style: normal;
@@ -333,6 +353,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--gallery-text);
+margin: 0;
 }
 
 
