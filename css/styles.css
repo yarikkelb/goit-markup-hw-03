@@ -86,9 +86,15 @@ padding: 24px 0;
     text-transform: uppercase;               
     color: var(--header-logo);  
     text-decoration: none;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 76px;
 }
 .header-list {
     display: flex;
+    align-items: flex-start;
+    padding: 0px;
     gap: 40px;
 }
 .header-span {
@@ -151,6 +157,7 @@ white-space: nowrap;
 clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
+color: #2E2F42;
 }
 .about-list {
     display: flex;
@@ -188,6 +195,11 @@ overflow: hidden;
     color: var(--hero-btn-color-focus);
     
 }
+.about-item {
+height: 104px;
+left: 156px;
+top: 792px;
+}
 
 .about-subtitle{
     font-family: 'Roboto', sans-serif;
@@ -201,6 +213,7 @@ overflow: hidden;
     flex-grow: 0;
     width: calc((100% - 72px)/4);
     margin: 0 0 8px;
+
 }
 .about-text {
     font-family: 'Roboto', sans-serif;
