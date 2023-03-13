@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modern-normalize.css"/>
 </head>
 
 <body>
     <header class="header"> 
-        <div class="container">
+        <div class="header-container">
         <nav class="header-nav">
             <a class="header-logo link" href="./portfolio.html">Web<span class="header-span">Studio</span></a>
             <ul class="header-list list">                
@@ -32,15 +33,15 @@
         </div>
     </header>
     <main>
-        <section class="section">
+        <section class="hero">
             <div class="container">
-            <h1 class="visually-hidden">Effective Solutions for Your Business</h1>
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-btn" type="button">Order Service</button>
             </div>
         </section>
         <section class="section">
             <div class="container">
-            <h2 class=".visually-hidden">Content</h2>
+            <h2 class="visually-hidden">Content</h2>
             <ul class="about-list list">
                 <li class="about-item">
                     <h3 class="about-subtitle">Strategy</h3>
@@ -50,7 +51,7 @@
                 <li class="about-item">
                     <h3 class="about-subtitle">Punctuality</h3>
                     <p class="about-text">Bring the key message to the brand's audience for the best price within the shortest possible
-                        time.</p>
+                    time.</p>
                 </li>
                 <li class="about-item">
                     <h3 class="about-subtitle">Diligence</h3>
@@ -81,7 +82,7 @@
             </ul>
             </div>
         </section>
-        <section class="section-team">
+        <section class="section team">
             <div class="container">
             <h2 class="team-title list">Our Team</h2>
             <ul class="team-list list">
@@ -93,19 +94,25 @@
                     </div>
                 </li>
                 <li class="team-info">
-                    <img src="./images/img-2.jpg" alt="tom" width="264" height="260">
+                    <img src="./images/img-2.jpg" alt="tom" width="264" height="260" style>
+                    <div class="team-style">
                     <h3 class="team-title-name">Tom Ford</h3>
                     <p class="team-text">Frontend Developer</p>
+                    </div>
                 </li>
                 <li class="team-info">
-                    <img src="./images/img-3.jpg" alt="camila" width="264" height="260">
+                    <img src="./images/img-3.jpg" alt="camila" width="264" height="260" style>
+                    <div class="team-style">
                     <h3 class="team-title-name">Camila Garcia</h3>
                     <p class="team-text">Marketing</p>
+                    </div>
                 </li>
                 <li class="team-info">
-                    <img src="./images/img-4.jpg" alt="daniel" width="264" height="260">
+                    <img src="./images/img-4.jpg" alt="daniel" width="264" height="260" style>
+                    <div class="team-style">
                     <h3 class="team-title-name">Daniel Wilson</h3>
                     <p class="team-text">UI Designer</p>
+                    </div>
                 </li>
             </ul>
             </div>
