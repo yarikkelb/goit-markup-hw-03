@@ -88,6 +88,7 @@ padding: 24px 0;
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
+    top: 0px;
 }
 .header-span {
     color: var(--span);
@@ -219,11 +220,11 @@ color: var(--header-email);
     flex-grow: 0;
     margin: 0;
 }
-.section.about {
+.about {
     padding: 120px 0;
     padding-top: 0;
 }
-.promo-title {
+.promo-title{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -264,7 +265,6 @@ color: var(--header-email);
 }
 .team-style{
     padding: 32px 0;
-
 }
 .team-title-name {
     font-family: 'Roboto', sans-serif;
@@ -296,6 +296,9 @@ color: var(--header-email);
 }
 .menu-btn{
     margin: 0 72px;
+    align-items: center;
+    padding: 0px 0px 32px;
+    gap: 32px;
 }
 .all-btn {
     font-family: 'Roboto', sans-serif;
