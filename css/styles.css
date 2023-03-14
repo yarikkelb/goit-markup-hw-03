@@ -59,8 +59,7 @@ body{
     padding: 120px 0;
 }
 .header {
-background-color: var(--header);
-padding: 24px 0;
+    border-bottom: var(--header-button);
 }
 .header-nav {
     display: flex;
@@ -81,7 +80,7 @@ padding: 24px 0;
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
-    margin: 76px;
+    margin-right: 76px;
 }
 .header-list {
     display: flex;
@@ -153,7 +152,6 @@ color: var(--header-email);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--hero-F);
-    
 }
 .hero-btn {
     font-family: inherit;
@@ -166,6 +164,7 @@ color: var(--header-email);
     color: var(--hero-F);
     background-color: var(--hero-btn-background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     cursor: pointer;
     padding: 16px 32px;
     border: 0;
@@ -195,7 +194,6 @@ color: var(--header-email);
 }
 .about-item {
     width: calc((100% - 72px)/4);
-    margin: 0 0 8px;
 }
 
 .about-subtitle{
@@ -204,10 +202,8 @@ color: var(--header-email);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--about-subtitle);      
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    color: var(--about-subtitle); 
+    margin: 0;     
 }
 .about-text {
     font-family: 'Roboto', sans-serif;
@@ -218,10 +214,9 @@ color: var(--header-email);
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0;
+    margin: 8px 0;
 }
 .about {
-    padding: 120px 0;
     padding-top: 0;
 }
 .promo-title{
@@ -233,9 +228,10 @@ color: var(--header-email);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--promo-title);
+    margin: 72px 0;
 }
 .promo-subject {
-    display: flex;
+    display: block;
 }
 .style{
     display: block;
@@ -245,26 +241,19 @@ color: var(--header-email);
     padding: 120px 0;
     background-color: var(--section-team-background);
 }
-.team-title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;  
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--gallery-title);
-    margin: 0 0 72px;
-}
+
 .team-list {
     display: flex;
     gap: 24px;
 }
 .team-info{
-    background-color: var(--team-info-background);
+    width: calc((100% - 72px)/4)
+    background-color: var(--section-team-background);
+    display: block;
 }
 .team-style{
     padding: 32px 0;
+    text-align: center;
 }
 .team-title-name {
     font-family: 'Roboto', sans-serif;
@@ -295,10 +284,10 @@ color: var(--header-email);
     padding-top: 96px;
 }
 .menu-btn{
-    margin: 0 72px;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 72px;
     padding: 0px 0px 32px;
-    gap: 32px;
+    gap: 24px;
 }
 .all-btn {
     font-family: 'Roboto', sans-serif;
@@ -315,6 +304,7 @@ color: var(--header-email);
     border-color: 1px solid #E7E9FC ;
     padding: 12px 24px;
     gap: 24px;
+    margin: 0 8px;
 }
 .all-btn:hover {
     background-color: var(--hover-focus);
@@ -341,8 +331,10 @@ color: var(--header-email);
     gap: 48px 24px;
 }
 .gallery-block {
-    width: calc((100% - 72px)/3);
-    margin: 0 0 8px;
+    width: calc((100% - 48px)/3);
+}
+.gallery-tabl {
+    display: block;
 }
 
 .gallery-container {
@@ -394,6 +386,7 @@ display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;              
 color: var(--footer-logo);
+margin-bottom: 16px;
 }
 .footer-span {
     color: var(--footer-span);
@@ -405,6 +398,7 @@ font-size: 16px;
 line-height: 1.5;           
 letter-spacing: 0.02em;
 color: var(--footer-text);
+margin: 0;
 }
 
 
