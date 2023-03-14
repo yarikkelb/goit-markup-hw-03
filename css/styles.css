@@ -38,12 +38,12 @@ body{
 .link {
     text-decoration: none;
 }
+
 .list{
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .container{
     width: 1158px;
     margin: 0 auto;
@@ -230,7 +230,7 @@ color: var(--header-email);
     color: var(--promo-title);
     margin: 72px 0;
 }
-.promo-subject {
+.img {
     display: block;
 }
 .style{
@@ -280,12 +280,21 @@ color: var(--header-email);
     margin: 0;
 }
 /**-----Portfolio---------*/
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
 .section.portfolio {
     padding-top: 96px;
 }
 .menu-btn{
     justify-content: center;
     margin-bottom: 72px;
+    margin-top: 96px;
     padding: 0px 0px 32px;
     gap: 24px;
 }
@@ -315,26 +324,16 @@ color: var(--header-email);
     color: var(--section-team-background);
 }
 
-.list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
 .gallery{
     background-color: var(--hero-F);
     text-decoration: none; 
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+    margin-bottom: 120px;
 }
 .gallery-block {
     width: calc((100% - 48px)/3);
-}
-.gallery-tabl {
-    display: block;
 }
 
 .gallery-container {
