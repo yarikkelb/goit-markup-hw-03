@@ -5,6 +5,7 @@
 --header-email: #434455;
 --hover-focus: #404bbf;
 --header-button: #2E2F42;
+--header-borbot: #E7E9FC;
 --hero: #2E2F42;
 --hero-F: #FFFFFF;
 --main-title-color: #ffffff;
@@ -22,6 +23,7 @@
 --second-title-color: #303030;
 --main-btn-color: #ffffff;     
 --all-btn: #4d5ae5;
+--all-btn-bord: #E7E9FC;
 --footer: #2e2f42;
 --footer-logo: #4d5ae5;
 --span: #2e2f42;
@@ -59,7 +61,7 @@ body{
     padding: 120px 0;
 }
 .header {
-    border-bottom: var(--header-button);
+    border-bottom: 1px solid var(--header-borbot);
 }
 .header-nav {
     display: flex;
@@ -228,7 +230,8 @@ color: var(--header-email);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--promo-title);
-    margin: 72px 0;
+    margin: 0;
+    gap: 24px;
 }
 .img {
     display: block;
@@ -247,7 +250,7 @@ color: var(--header-email);
     gap: 24px;
 }
 .team-info{
-    width: calc((100% - 72px)/4)
+    width: calc((100% - 72px)/4);
     background-color: var(--section-team-background);
     display: block;
 }
@@ -288,14 +291,13 @@ color: var(--header-email);
     padding: 0;
     margin: 0;
 }
-.section.portfolio {
+.section-portfolio {
     padding-top: 96px;
 }
 .menu-btn{
     justify-content: center;
     margin-bottom: 72px;
-    margin-top: 96px;
-    padding: 0px 0px 32px;
+    padding: 0px 0px;
     gap: 24px;
 }
 .all-btn {
@@ -310,10 +312,9 @@ color: var(--header-email);
     letter-spacing: 0.04em;
     color: var(--all-btn);
     background-color: var(--section-team-background);
-    border-color: 1px solid #E7E9FC ;
+    border: 1px solid var(--all-btn-bord);
     padding: 12px 24px;
-    gap: 24px;
-    margin: 0 8px;
+    gap: 24px;    
 }
 .all-btn:hover {
     background-color: var(--hover-focus);
@@ -381,7 +382,7 @@ text-decoration: none;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;           
-display: flex;
+display: inline-block;
 letter-spacing: 0.03em;
 text-transform: uppercase;              
 color: var(--footer-logo);
